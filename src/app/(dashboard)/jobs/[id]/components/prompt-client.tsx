@@ -1,7 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState } from 'react';
+import { useFormStatus } from 'react-dom';
 import { toast } from '@/hooks/use-toast';
 import { Bot, Trash2, Wand2, CornerDownLeft } from 'lucide-react';
 import {
@@ -76,7 +77,7 @@ function DeletePromptButton({ promptId, jobId }: { promptId: string, jobId: stri
 
 export function PromptClient({ job, initialPrompts }: { job: Job; initialPrompts: Prompt[] }) {
   const initialState: PromptState = { message: null, errors: {} };
-  const [state, dispatch] = useFormState(createPrompt, initialState);
+  const [state, dispatch] = useActionState(createPrompt, initialState);
   const formRef = React.useRef<HTMLFormElement>(null);
 
   React.useEffect(() => {

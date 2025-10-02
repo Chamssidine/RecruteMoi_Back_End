@@ -1,7 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState } from 'react';
+import { useFormStatus } from 'react-dom';
 import {
   ColumnDef,
   flexRender,
@@ -67,7 +68,7 @@ function SubmitButton({ isEditing }: { isEditing: boolean }) {
 
 function CategoryForm({ category }: { category?: Category }) {
   const initialState: CategoryState = { message: null, errors: {} };
-  const [state, dispatch] = useFormState(saveCategory, initialState);
+  const [state, dispatch] = useActionState(saveCategory, initialState);
   const [isOpen, setIsOpen] = React.useState(false);
 
   React.useEffect(() => {

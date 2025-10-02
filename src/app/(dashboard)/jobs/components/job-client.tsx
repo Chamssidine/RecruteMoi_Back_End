@@ -2,7 +2,8 @@
 
 import * as React from 'react';
 import Link from 'next/link';
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState } from 'react';
+import { useFormStatus } from 'react-dom';
 import {
   ColumnDef,
   flexRender,
@@ -75,7 +76,7 @@ function SubmitButton({ isEditing }: { isEditing: boolean }) {
 
 function JobForm({ job, categories }: { job?: Job; categories: SimpleCategory[] }) {
   const initialState: JobState = { message: null, errors: {} };
-  const [state, dispatch] = useFormState(saveJob, initialState);
+  const [state, dispatch] = useActionState(saveJob, initialState);
   const [isOpen, setIsOpen] = React.useState(false);
 
   React.useEffect(() => {
