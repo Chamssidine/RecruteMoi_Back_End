@@ -1,8 +1,14 @@
+
+export interface Metier {
+  Fr: string;
+  En: string;
+  Rome: string;
+}
+
 export interface Category {
-  id: string;
-  name: string;
-  description: string;
-  jobCount: number;
+  Fr: string;
+  En: string;
+  Metiers: Metier[];
 }
 
 export interface Job {
