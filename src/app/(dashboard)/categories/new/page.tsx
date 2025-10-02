@@ -40,7 +40,7 @@ export default function NewCategoryPage() {
         title: 'Category Created',
         description: `Successfully created category: ${state.message}`,
       });
-      router.push('/categories');
+      router.push('/professions/new');
     } else if (state.message && state.errors) {
       toast({
         variant: 'destructive',
