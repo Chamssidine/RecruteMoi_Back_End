@@ -3,7 +3,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Briefcase } from 'lucide-react';
+import { Briefcase, Folder } from 'lucide-react';
 
 import {
   SidebarProvider,
@@ -20,6 +20,7 @@ import { Logo } from '@/components/icons';
 
 const navItems = [
   { href: '/professions', icon: Briefcase, label: 'Professions' },
+  { href: '/categories', icon: Folder, label: 'Categories' },
 ];
 
 export default function DashboardLayout({
