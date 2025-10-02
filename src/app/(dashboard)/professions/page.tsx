@@ -1,4 +1,5 @@
 
+import Link from 'next/link';
 import { getProfessions } from '@/lib/db';
 import {
   Accordion,
@@ -7,6 +8,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { PlusCircle } from 'lucide-react';
 
 
 export default async function ProfessionsPage() {
@@ -14,9 +17,17 @@ export default async function ProfessionsPage() {
 
   return (
     <div>
-      <p className="text-muted-foreground mb-4">
-        Browse the job categories and professions available in the recruteMoi app.
-      </p>
+      <div className="flex justify-between items-center mb-4">
+        <p className="text-muted-foreground">
+          Browse the job categories and professions available in the recruteMoi app.
+        </p>
+        <Button asChild>
+          <Link href="/professions/new">
+            <PlusCircle />
+            <span>Add Profession</span>
+          </Link>
+        </Button>
+      </div>
        <Accordion type="single" collapsible className="w-full">
         {professions.Categories.map((category) => (
           <AccordionItem value={category.En} key={category.En}>
