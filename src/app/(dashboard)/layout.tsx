@@ -39,7 +39,7 @@ export default function DashboardLayout({
         <SidebarHeader>
           <div className="flex items-center gap-2">
             <Logo className="size-7 text-primary" />
-            <h1 className="font-headline text-lg font-semibold">AI Recruiter</h1>
+            <h1 className="font-headline text-lg font-semibold">recruteMoi</h1>
           </div>
         </SidebarHeader>
         <SidebarContent>
@@ -62,7 +62,7 @@ export default function DashboardLayout({
         </SidebarContent>
         <SidebarFooter>
           <p className="text-xs text-muted-foreground p-2">
-            © 2024 AI Recruiter Inc.
+            © 2024 recruteMoi Inc.
           </p>
         </SidebarFooter>
       </Sidebar>

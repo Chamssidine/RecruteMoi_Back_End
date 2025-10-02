@@ -2,7 +2,7 @@
   "name": "ai-recruiter-assistant",
   "version": "0.1.0",
   "private": true,
-  "description": "An AI-powered platform for simulating job interviews.",
+  "description": "Back office for the recruteMoi Android application.",
   "scripts": {
     "dev": "next dev --turbopack -p 9002",
     "genkit:dev": "genkit start -- tsx src/ai/dev.ts",

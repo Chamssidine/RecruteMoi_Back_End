@@ -3,8 +3,8 @@ import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'AI Recruiter Assistant',
-  description: 'An AI-powered platform for simulating job interviews.',
+  title: 'recruteMoi Back Office',
+  description: 'Back office for the recruteMoi Android application.',
 };
 
 export default function RootLayout({
