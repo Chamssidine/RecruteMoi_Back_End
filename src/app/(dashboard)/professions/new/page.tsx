@@ -2,7 +2,7 @@
 'use client';
 
 import * as React from 'react';
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState, useFormStatus } from 'react';
 import { useRouter } from 'next/navigation';
 
 import { getProfessions } from '@/lib/db';
@@ -41,7 +41,7 @@ export default function NewProfessionPage() {
     const router = useRouter();
     const [categories, setCategories] = React.useState<Category[]>([]);
     const initialState: ProfessionState = { message: null, errors: {} };
-    const [state, dispatch] = useFormState(createProfession, initialState);
+    const [state, dispatch] = useActionState(createProfession, initialState);
 
     React.useEffect(() => {
         async function fetchProfessions() {

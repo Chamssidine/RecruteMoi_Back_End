@@ -2,7 +2,7 @@
 'use client';
 
 import * as React from 'react';
-import { useFormState } from 'react-dom';
+import { useActionState } from 'react';
 import { useFormStatus } from 'react-dom';
 import { useRouter } from 'next/navigation';
 
@@ -32,7 +32,7 @@ function SubmitButton() {
 export default function NewCategoryPage() {
   const router = useRouter();
   const initialState: CategoryState = { message: null, errors: {} };
-  const [state, dispatch] = useFormState(createCategory, initialState);
+  const [state, dispatch] = useActionState(createCategory, initialState);
 
   React.useEffect(() => {
     if (state.message && !state.errors) {
