@@ -17,15 +17,16 @@ import type { Category } from '@/lib/types';
 
 
 export default function ProfessionsPage() {
-  const [professions, setProfessions] = React.useState<{Categories: Category[]}>({Categories: []});
+  const [professions, setProfessions] = React.useState<Category[]>([]);
 
   React.useEffect(() => {
     async function fetchProfessions() {
-      const data = await getProfessions();
-      setProfessions(data);
+        const professionsData = await getProfessions();
+        setProfessions(professionsData.Categories);
     }
     fetchProfessions();
   }, []);
+
 
   return (
     <div>
@@ -41,7 +42,7 @@ export default function ProfessionsPage() {
         </Button>
       </div>
        <Accordion type="single" collapsible className="w-full">
-        {professions.Categories.map((category) => (
+        {professions.map((category) => (
           <AccordionItem value={category.En} key={category.En}>
             <AccordionTrigger>
                 <div className='flex items-center gap-4'>

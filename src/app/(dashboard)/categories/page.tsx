@@ -1,5 +1,8 @@
 
+'use client';
+
 import Link from 'next/link';
+import * as React from 'react';
 import { getProfessions } from '@/lib/db';
 import {
   Card,
@@ -10,9 +13,18 @@ import {
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { PlusCircle } from 'lucide-react';
+import type { Category } from '@/lib/types';
 
-export default async function CategoriesPage() {
-  const professions = await getProfessions();
+export default function CategoriesPage() {
+    const [categories, setCategories] = React.useState<Category[]>([]);
+
+    React.useEffect(() => {
+        async function fetchCategories() {
+            const professions = await getProfessions();
+            setCategories(professions.Categories);
+        }
+        fetchCategories();
+    }, []);
 
   return (
     <div>
@@ -36,7 +48,7 @@ export default async function CategoriesPage() {
         </CardHeader>
         <CardContent>
           <div className="divide-y">
-            {professions.Categories.map((category) => (
+            {categories.map((category) => (
               <div key={category.En} className="py-2 flex justify-between items-center">
                 <div>
                     <p className="font-medium">{category.Fr}</p>
