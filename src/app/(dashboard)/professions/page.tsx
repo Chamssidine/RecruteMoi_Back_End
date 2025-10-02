@@ -1,5 +1,8 @@
 
+'use client';
+
 import Link from 'next/link';
+import * as React from 'react';
 import { getProfessions } from '@/lib/db';
 import {
   Accordion,
@@ -10,10 +13,19 @@ import {
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { PlusCircle } from 'lucide-react';
+import type { Category } from '@/lib/types';
 
 
-export default async function ProfessionsPage() {
-  const professions = await getProfessions();
+export default function ProfessionsPage() {
+  const [professions, setProfessions] = React.useState<{Categories: Category[]}>({Categories: []});
+
+  React.useEffect(() => {
+    async function fetchProfessions() {
+      const data = await getProfessions();
+      setProfessions(data);
+    }
+    fetchProfessions();
+  }, []);
 
   return (
     <div>
