@@ -2,7 +2,8 @@
 'use client';
 
 import * as React from 'react';
-import { useActionState, useFormStatus } from 'react';
+import { useActionState } from 'react';
+import { useFormStatus } from 'react-dom';
 import { useRouter } from 'next/navigation';
 
 import { getProfessions } from '@/lib/db';
