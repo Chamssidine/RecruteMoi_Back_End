@@ -91,6 +91,14 @@ export default function NewCategoryPage() {
                 </p>
               ))}
           </div>
+           <div className="space-y-2">
+            <Label htmlFor="icon">Icon</Label>
+            <Input id="icon" name="icon" type="file" />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="image">Illustration Image</Label>
+            <Input id="image" name="image" type="file" />
+          </div>
           <div className="flex justify-end">
             <SubmitButton />
           </div>

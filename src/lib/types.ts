@@ -8,6 +8,8 @@ export interface Metier {
 export interface Category {
   Fr: string;
   En: string;
+  IconUrl: string;
+  ImageUrl: string;
   Metiers: Metier[];
 }
 

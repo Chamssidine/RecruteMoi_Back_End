@@ -2,6 +2,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import * as React from 'react';
 import { getProfessions } from '@/lib/db';
 import {
@@ -49,10 +50,16 @@ export default function CategoriesPage() {
         <CardContent>
           <div className="divide-y">
             {categories.map((category) => (
-              <div key={category.En} className="py-2 flex justify-between items-center">
-                <div>
+              <div key={category.En} className="py-2 grid grid-cols-4 items-center gap-4">
+                <div className="col-span-2">
                     <p className="font-medium">{category.Fr}</p>
                     <p className="text-sm text-muted-foreground">{category.En}</p>
+                </div>
+                 <div className="relative h-10 w-10">
+                    <Image src={category.IconUrl} alt={`${category.En} icon`} fill className="object-contain" />
+                </div>
+                 <div className="relative h-16 w-32">
+                    <Image src={category.ImageUrl} alt={`${category.En} illustration`} fill className="object-cover rounded-md" />
                 </div>
               </div>
             ))}
