@@ -58,8 +58,15 @@ export default function CategoriesPage() {
                  <div className="relative h-10 w-10">
                     <Image src={category.IconUrl} alt={`${category.En} icon`} fill className="object-contain" />
                 </div>
-                 <div className="relative h-16 w-32">
-                    <Image src={category.ImageUrl} alt={`${category.En} illustration`} fill className="object-cover rounded-md" />
+                 <div className="flex gap-2">
+                    <div className="relative h-16 w-16">
+                        <Image src={category.FrIllustrationUrl} alt={`${category.Fr} illustration`} fill className="object-cover rounded-md" />
+                         <p className="text-xs text-center absolute -bottom-4 w-full">FR</p>
+                    </div>
+                     <div className="relative h-16 w-16">
+                        <Image src={category.EnIllustrationUrl} alt={`${category.En} illustration`} fill className="object-cover rounded-md" />
+                         <p className="text-xs text-center absolute -bottom-4 w-full">EN</p>
+                    </div>
                 </div>
               </div>
             ))}

@@ -96,8 +96,12 @@ export default function NewCategoryPage() {
             <Input id="icon" name="icon" type="file" />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="image">Illustration Image</Label>
-            <Input id="image" name="image" type="file" />
+            <Label htmlFor="fr-illustration">French Illustration</Label>
+            <Input id="fr-illustration" name="frIllustration" type="file" />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="en-illustration">English Illustration</Label>
+            <Input id="en-illustration" name="enIllustration" type="file" />
           </div>
           <div className="flex justify-end">
             <SubmitButton />

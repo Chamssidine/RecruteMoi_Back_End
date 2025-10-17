@@ -9,7 +9,8 @@ export interface Category {
   Fr: string;
   En: string;
   IconUrl: string;
-  ImageUrl: string;
+  FrIllustrationUrl: string;
+  EnIllustrationUrl: string;
   Metiers: Metier[];
 }
 
@@ -33,3 +34,4 @@ export type Message = {
   role: 'user' | 'assistant';
   content: string;
 };
+

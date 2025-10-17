@@ -7,7 +7,8 @@ const professions = {
       "Fr": "Agriculture, marine, pêche",
       "En": "Agriculture, Marine, Fishing",
       "IconUrl": "https://picsum.photos/seed/1/100/100",
-      "ImageUrl": "https://picsum.photos/seed/101/400/200",
+      "FrIllustrationUrl": "https://picsum.photos/seed/101/400/200",
+      "EnIllustrationUrl": "https://picsum.photos/seed/201/400/200",
       "Metiers": [
         { "Fr": "Agriculteurs salariés", "En": "Salaried Farmers", "Rome": "A1402" },
         { "Fr": "Éleveurs salariés", "En": "Salaried Breeders", "Rome": "A1403" },
@@ -27,7 +28,8 @@ const professions = {
       "Fr": "Bâtiment, travaux publics",
       "En": "Construction, Public Works",
       "IconUrl": "https://picsum.photos/seed/2/100/100",
-      "ImageUrl": "https://picsum.photos/seed/102/400/200",
+      "FrIllustrationUrl": "https://picsum.photos/seed/102/400/200",
+      "EnIllustrationUrl": "https://picsum.photos/seed/202/400/200",
       "Metiers": [
         { "Fr": "Ouvriers non qualifiés des travaux publics, du béton et de l'extraction", "En": "Unskilled Public Works, Concrete, and Extraction Workers", "Rome": "B0102" },
         { "Fr": "Ouvriers non qualifiés du gros œuvre du bâtiment", "En": "Unskilled Major Building Construction Workers", "Rome": "B0202" },
@@ -55,7 +57,8 @@ const professions = {
       "Fr": "Électricité, électronique",
       "En": "Electricity, Electronics",
       "IconUrl": "https://picsum.photos/seed/3/100/100",
-      "ImageUrl": "https://picsum.photos/seed/103/400/200",
+      "FrIllustrationUrl": "https://picsum.photos/seed/103/400/200",
+      "EnIllustrationUrl": "https://picsum.photos/seed/203/400/200",
       "Metiers": [
         { "Fr": "Ouvriers non qualifiés de l'électricité et de l'électronique", "En": "Unskilled Electrical and Electronic Workers", "Rome": "M1802" },
         { "Fr": "Ouvriers qualifiés de l'électricité et de l'électronique", "En": "Skilled Electrical and Electronic Workers", "Rome": "M1803" },
@@ -68,7 +71,8 @@ const professions = {
       "Fr": "Mécanique, travail des métaux",
       "En": "Mechanics, Metalworking",
       "IconUrl": "https://picsum.photos/seed/4/100/100",
-      "ImageUrl": "https://picsum.photos/seed/104/400/200",
+      "FrIllustrationUrl": "https://picsum.photos/seed/104/400/200",
+      "EnIllustrationUrl": "https://picsum.photos/seed/204/400/200",
       "Metiers": [
         { "Fr": "Ouvriers non qualifiés des industries agro-alimentaires", "En": "Unskilled Workers in the Agri-food Industries", "Rome": "M1202" },
         { "Fr": "Régleurs", "En": "Setters", "Rome": "M1103" },
@@ -88,7 +92,8 @@ const professions = {
       "Fr": "Industries de process",
       "En": "Process Industries",
       "IconUrl": "https://picsum.photos/seed/5/100/100",
-      "ImageUrl": "https://picsum.photos/seed/105/400/200",
+      "FrIllustrationUrl": "https://picsum.photos/seed/105/400/200",
+      "EnIllustrationUrl": "https://picsum.photos/seed/205/400/200",
       "Metiers": [
         { "Fr": "Ouvriers non qualifiés des industries chimiques et plastiques", "En": "Unskilled Workers in Chemical and Plastic Industries", "Rome": "M1002" },
         { "Fr": "Ouvriers non qualifiés des industries agro-alimentaires", "En": "Unskilled Workers in Agri-food Industries", "Rome": "M1003" },
@@ -106,7 +111,8 @@ const professions = {
       "Fr": "Maintenance",
       "En": "Maintenance",
       "IconUrl": "https://picsum.photos/seed/6/100/100",
-      "ImageUrl": "https://picsum.photos/seed/106/400/200",
+      "FrIllustrationUrl": "https://picsum.photos/seed/106/400/200",
+      "EnIllustrationUrl": "https://picsum.photos/seed/206/400/200",
       "Metiers": [
         { "Fr": "Ouvriers qualifiés de la maintenance en mécanique", "En": "Skilled Mechanical Maintenance Workers", "Rome": "M1312" },
         { "Fr": "Ouvriers qualifiés de la maintenance en électricité et en électronique", "En": "Skilled Electrical and Electronic Maintenance Workers", "Rome": "M1313" },
@@ -123,7 +129,8 @@ const professions = {
       "Fr": "Transports, logistique et tourisme",
       "En": "Transportation, Logistics and Tourism",
       "IconUrl": "https://picsum.photos/seed/7/100/100",
-      "ImageUrl": "https://picsum.photos/seed/107/400/200",
+      "FrIllustrationUrl": "https://picsum.photos/seed/107/400/200",
+      "EnIllustrationUrl": "https://picsum.photos/seed/207/400/200",
       "Metiers": [
         { "Fr": "Ouvriers non qualifiés de l'emballage et manutentionnaires", "En": "Unskilled Packaging Workers and Handlers", "Rome": "M1202" },
         { "Fr": "Ouvriers qualifiés du magasinage et de la manutention", "En": "Skilled Warehouse and Handling Workers", "Rome": "M1203" },
@@ -149,7 +156,8 @@ const professions = {
       "Fr": "Gestion, administration des entreprises",
       "En": "Business Management and Administration",
       "IconUrl": "https://picsum.photos/seed/8/100/100",
-      "ImageUrl": "https://picsum.photos/seed/108/400/200",
+      "FrIllustrationUrl": "https://picsum.photos/seed/108/400/200",
+      "EnIllustrationUrl": "https://picsum.photos/seed/208/400/200",
       "Metiers": [
         { "Fr": "Secrétaires bureautiques et assimilés", "En": "Office Secretaries and Similar Roles", "Rome": "M1102" },
         { "Fr": "Employés de la comptabilité", "En": "Accounting Clerks", "Rome": "M1103" },
@@ -168,7 +176,8 @@ const professions = {
       "Fr": "Artisanat",
       "En": "Craftsmanship",
       "IconUrl": "https://picsum.photos/seed/9/100/100",
-      "ImageUrl": "https://picsum.photos/seed/109/400/200",
+      "FrIllustrationUrl": "https://picsum.photos/seed/109/400/200",
+      "EnIllustrationUrl": "https://picsum.photos/seed/209/400/200",
       "Metiers": [
         { "Fr": "Ouvriers non qualifiés divers de type artisanal", "En": "Various Unskilled Artisanal Workers", "Rome": "M1002" },
         { "Fr": "Artisans et ouvriers qualifiés divers de type artisanal", "En": "Various Skilled Artisanal Craftsmen and Workers", "Rome": "M1003" }
@@ -178,7 +187,8 @@ const professions = {
       "Fr": "Informatique et télécommunications / Études et recherche",
       "En": "Information Technology and Telecommunications / Studies and Research",
       "IconUrl": "https://picsum.photos/seed/10/100/100",
-      "ImageUrl": "https://picsum.photos/seed/110/400/200",
+      "FrIllustrationUrl": "https://picsum.photos/seed/110/400/200",
+      "EnIllustrationUrl": "https://picsum.photos/seed/210/400/200",
       "Metiers": [
         { "Fr": "Employés et opérateurs en informatique", "En": "Computer Employees and Operators", "Rome": "M2102" },
         { "Fr": "Techniciens de production, d'exploitation, d'installation, et de maintenance, support et services aux utilisateurs en informatique", "En": "IT Production, Operation, Installation, and Maintenance Technicians, Support and User Services", "Rome": "M2104" },
@@ -191,7 +201,8 @@ const professions = {
       "Fr": "Études et recherche",
       "En": "Studies and Research",
       "IconUrl": "https://picsum.photos/seed/11/100/100",
-      "ImageUrl": "https://picsum.photos/seed/111/400/200",
+      "FrIllustrationUrl": "https://picsum.photos/seed/111/400/200",
+      "EnIllustrationUrl": "https://picsum.photos/seed/211/400/200",
       "Metiers": [
         { "Fr": "ingénieurs et cadres d'étude, recherche et développement (industrie)", "En": "Engineers and Executives in Study, Research and Development (Industry)", "Rome": "M2202" },
         { "Fr": "Chercheurs (sauf industrie et enseignement supérieur)", "En": "Researchers (excluding Industry and Higher Education)", "Rome": "M2203" }
@@ -201,7 +212,8 @@ const professions = {
       "Fr": "Banque et Assurances",
       "En": "Banking and Insurance",
       "IconUrl": "https://picsum.photos/seed/12/100/100",
-      "ImageUrl": "https://picsum.photos/seed/112/400/200",
+      "FrIllustrationUrl": "https://picsum.photos/seed/112/400/200",
+      "EnIllustrationUrl": "https://picsum.photos/seed/212/400/200",
       "Metiers": [
         { "Fr": "Employés de la banque et des assurances", "En": "Bank and Insurance Employees", "Rome": "M2302" },
         { "Fr": "Techniciens de la banque", "En": "Bank Technicians", "Rome": "M2303" },
@@ -213,7 +225,8 @@ const professions = {
       "Fr": "Commerce",
       "En": "Commerce",
       "IconUrl": "https://picsum.photos/seed/13/100/100",
-      "ImageUrl": "https://picsum.photos/seed/113/400/200",
+      "FrIllustrationUrl": "https://picsum.photos/seed/113/400/200",
+      "EnIllustrationUrl": "https://picsum.photos/seed/213/400/200",
       "Metiers": [
         { "Fr": "Employés de libre service", "En": "Self-Service Employees", "Rome": "M2402" },
         { "Fr": "Caissiers", "En": "Cashiers", "Rome": "M2403" },
@@ -237,7 +250,8 @@ const professions = {
       "Fr": "Hôtellerie, restauration, alimentation",
       "En": "Hotel Industry, Catering, Food",
       "IconUrl": "https://picsum.photos/seed/14/100/100",
-      "ImageUrl": "https://picsum.photos/seed/114/400/200",
+      "FrIllustrationUrl": "https://picsum.photos/seed/114/400/200",
+      "EnIllustrationUrl": "https://picsum.photos/seed/214/400/200",
       "Metiers": [
         { "Fr": "Apprentis et ouvriers non qualifiés de l'alimentation (hors industries agro-alimentaires)", "En": "Apprentices and Unskilled Food Workers (excluding Agri-food Industries)", "Rome": "M2502" },
         { "Fr": "Bouchers", "En": "Butchers", "Rome": "M2503" },
@@ -257,7 +271,8 @@ const professions = {
       "Fr": "Services aux particuliers et aux collectivités",
       "En": "Services for Individuals and Communities",
       "IconUrl": "https://picsum.photos/seed/15/100/100",
-      "ImageUrl": "https://picsum.photos/seed/115/400/200",
+      "FrIllustrationUrl": "https://picsum.photos/seed/115/400/200",
+      "EnIllustrationUrl": "https://picsum.photos/seed/215/400/200",
       "Metiers": [
         { "Fr": "Coiffeurs, esthéticiens", "En": "Hairdressers, Beauticians", "Rome": "M2602" },
         { "Fr": "Employés de maison et personnels de ménage", "En": "House Employees and Housekeeping Staff", "Rome": "M2603" },
@@ -275,7 +290,8 @@ const professions = {
       "Fr": "Communication, information, art et spectacle",
       "En": "Communication, Information, Art and Entertainment",
       "IconUrl": "https://picsum.photos/seed/16/100/100",
-      "ImageUrl": "https://picsum.photos/seed/116/400/200",
+      "FrIllustrationUrl": "https://picsum.photos/seed/116/400/200",
+      "EnIllustrationUrl": "https://picsum.photos/seed/216/400/200",
       "Metiers": [
         { "Fr": "Assistants de communication", "En": "Communication Assistants", "Rome": "M2702" },
         { "Fr": "Interprètes", "En": "Interpreters", "Rome": "M2703" },
@@ -294,7 +310,8 @@ const professions = {
       "Fr": "Santé, action sociale, culturelle et sportive",
       "En": "Health, Social, Cultural, and Sports",
       "IconUrl": "https://picsum.photos/seed/17/100/100",
-      "ImageUrl": "https://picsum.photos/seed/117/400/200",
+      "FrIllustrationUrl": "https://picsum.photos/seed/117/400/200",
+      "EnIllustrationUrl": "https://picsum.photos/seed/217/400/200",
       "Metiers": [
         { "Fr": "Aides-soignants", "En": "Nursing Assistants", "Rome": "M3102" },
         { "Fr": "Infirmiers", "En": "Nurses", "Rome": "M3103" },
@@ -319,7 +336,8 @@ const professions = {
       "Fr": "Enseignement, formation",
       "En": "Teaching and Training",
       "IconUrl": "https://picsum.photos/seed/18/100/100",
-      "ImageUrl": "https://picsum.photos/seed/118/400/200",
+      "FrIllustrationUrl": "https://picsum.photos/seed/118/400/200",
+      "EnIllustrationUrl": "https://picsum.photos/seed/218/400/200",
       "Metiers": [
         { "Fr": "Professeurs des écoles", "En": "Primary School Teachers", "Rome": "M4102" },
         { "Fr": "Professeurs du secondaire", "En": "Secondary School Teachers", "Rome": "M4103" },
@@ -429,7 +447,7 @@ export const deleteCategory = async (id: string): Promise<boolean> => {
     // also delete associated jobs and prompts
     const jobsToDelete = jobs.filter(j => j.categoryId === id).map(j => j.id);
     jobs = jobs.filter(j => j.categoryId !== id);
-    prompts = prompts.filter(p => !jobsToDelete.includes(p.jobId));
+    prompts = prompts.filter(p => !jobsToDelete.includes(p.id));
     return categories.length < initialLength;
 }
 
